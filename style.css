@@ -1,0 +1,287 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  padding: 7px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 9px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: #2563eb;
+  color: white;
+  padding: 50px 40px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* ===== SEARCH ===== */
+.search-box {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+.search-box button {
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  padding: 30px 40px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* ===== CATEGORY ===== */
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.category {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+.category:hover {
+  background: #0ea5e9;
+  color: white;
+  border-color: #0ea5e9;
+}
+
+/* ===== EVENT CARDS ===== */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.event-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.event-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 12px;
+}
+
+.event-content h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.event-content p {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 8px;
+}
+
+.event-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* ===== FORMS ===== */
+.form-container {
+  width: 400px;
+  max-width: 90%;
+  background: white;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #2563eb;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-group textarea {
+  height: 90px;
+  resize: none;
+}
+
+.form-container p {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.form-container p a {
+  color: #0ea5e9;
+}
+
+/* ===== EVENT DETAILS ===== */
+.details-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.details-container img {
+  width: 420px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.details-info {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.details-info h2 {
+  margin-bottom: 10px;
+}
+
+.details-info p {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.details-info ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+/* ===== FILTER BOX ===== */
+.filter-box {
+  background: white;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-box select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

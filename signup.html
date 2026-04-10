@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventZone | Signup</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">EventZone</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="form-container">
+  <h2>Create Account</h2>
+
+  <form onsubmit="return validateSignup()">
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="signupPass" placeholder="Create password" required>
+    </div>
+
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input type="password" id="signupConfirm" placeholder="Confirm password" required>
+    </div>
+
+    <button class="btn" type="submit" style="width:100%; border:none; cursor:pointer;">
+      Signup
+    </button>
+  </form>
+
+  <p>Already have an account? <a href="login.html">Login</a></p>
+</div>
+
+<footer>
+  <p>© EventZone | Signup Page</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

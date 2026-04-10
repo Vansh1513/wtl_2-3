@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventZone | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">EventZone</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="btn" href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container" style="min-height: 80vh; padding-top: 50px;">
+  <div style="background: white; border: 1px solid #ddd; padding: 30px; border-radius: 8px;">
+    <h2>Welcome Back to Your Dashboard, <span id="dash-name" style="color:#2563eb;">User</span>!</h2>
+    <p>Email: <strong id="dash-email">user@example.com</strong></p>
+    
+    <h3 style="margin-top: 30px; border-bottom: 2px solid #2563eb; padding-bottom: 10px;">My Tickets</h3>
+    
+    <div style="margin-top: 20px; background: #f8fafc; border-left: 4px solid #0ea5e9; padding: 15px;">
+        <h4>Night Beats Concert</h4>
+        <p><strong>Tickets:</strong> 2</p>
+        <p><strong>Date:</strong> 15 February 2026</p>
+        <p><strong>Status:</strong> <span style="color: green;">Confirmed</span></p>
+    </div>
+    
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 EventZone | Dashboard</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+<script>
+    // Load data specific to Dashboard
+    document.addEventListener("DOMContentLoaded", function() {
+        if(localStorage.getItem("isLoggedIn") !== "true") {
+            window.location.href = "login.html";
+        }
+        document.getElementById('dash-name').innerText = localStorage.getItem("userName") || "Valued Customer";
+        document.getElementById('dash-email').innerText = localStorage.getItem("userEmail") || "No email on file";
+    });
+</script>
+</body>
+</html>

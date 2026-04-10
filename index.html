@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventZone | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">EventZone</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="btn" href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Discover Events & Book Tickets Easily</h1>
+  <p>Concerts, Comedy Shows, Festivals and Workshops near your city.</p>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search events or location...">
+    <button class="btn" onclick="searchEvents()">Search</button>
+  </div>
+</section>
+
+<div class="container">
+  <h2 class="section-title">Popular Categories</h2>
+
+  <div class="categories">
+    <div class="category">Music</div>
+    <div class="category">Comedy</div>
+    <div class="category">Sports</div>
+    <div class="category">Workshops</div>
+    <div class="category">Theatre</div>
+    <div class="category">Festivals</div>
+  </div>
+
+  <h2 class="section-title">Trending Events</h2>
+
+  <div class="event-grid">
+
+    <div class="event-card">
+      <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=900&q=60" alt="Concert">
+      <div class="event-content">
+        <h3>Night Beats Concert</h3>
+        <p>Open Air Arena, Pune</p>
+        <div class="event-info">
+          <span>15 Feb</span>
+          <span>₹499</span>
+        </div>
+        <a href="event-details.html?event=night-beats" class="btn">View Details</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="https://images.unsplash.com/photo-1527224857830-43a7acc85260?auto=format&fit=crop&w=900&q=60" alt="Comedy">
+      <div class="event-content">
+        <h3>Comedy Night Live</h3>
+        <p>City Club, Mumbai</p>
+        <div class="event-info">
+          <span>18 Feb</span>
+          <span>₹299</span>
+        </div>
+        <a href="event-details.html?event=comedy-night" class="btn">View Details</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="https://i.ontraport.com/224876.95b4848a200233c4130d3271e852c2a1.JPEG" alt="Workshop">
+      <div class="event-content">
+        <h3>Photography Workshop</h3>
+        <p>Creative Studio, Nashik</p>
+        <div class="event-info">
+          <span>22 Feb</span>
+          <span>₹699</span>
+        </div>
+        <a href="event-details.html?event=photo-workshop" class="btn">View Details</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=900&q=60" alt="Screening">
+      <div class="event-content">
+        <h3>Cricket Screening</h3>
+        <p>Sky Lounge, Pune</p>
+        <div class="event-info">
+          <span>25 Feb</span>
+          <span>₹199</span>
+        </div>
+        <a href="event-details.html?event=cricket-screening" class="btn">View Details</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© EventZone | Event Booking Website</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
