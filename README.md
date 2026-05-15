@@ -1,16 +1,24 @@
 //commands to deploy a static webiste
 chmod 400 your-key.pem
+
 ssh -i your-key.pem ubuntu@YOUR_PUBLIC_IP
+
 sudo apt update
 sudo apt upgrade -y
+
 sudo apt install apache2 -y
+
 sudo systemctl start apache2
 sudo systemctl enable apache2
+
 cd /var/www/html
+
 sudo rm index.html
+
 sudo nano index.html
 sudo nano style.css
 sudo nano script.js
+
 sudo systemctl restart apache2
 sudo systemctl status apache2
 
