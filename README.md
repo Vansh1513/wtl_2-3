@@ -73,21 +73,19 @@ sudo chmod -R 755 /home/ubuntu/blog-app/client/dist
 sudo systemctl restart nginx
 
 config->
+
+
+
 server {
     listen 80;
     server_name 13.232.252.114;
-
-    # Frontend (Static Files)
     location / {
         root /home/ubuntu/blog-app/client/dist;
         index index.html;
         try_files $uri $uri/ /index.html;
     }
-
-    # Backend API (Proxy)
     location /api {
         proxy_pass http://localhost:5000;
-
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
